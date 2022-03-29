@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*, ::before, ::after, h1, h2, h3, h4, h5, h6, p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'League Spartan', sans-serif;
+}
+
+#app {
+  overflow-x: hidden;
+}
+
+#app .navbar {
+  z-index: 9999;
+  padding: 1.2rem 1rem;
+}
+
+#app .navbar .container-fluid .navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+
+#app .navbar .container-fluid .navbar-brand img {
+  width: 100%;
+  transition: .5s ease;
+}
+
+#app .navbar .container-fluid .navbar-nav .nav-link {
+  font-weight: 500;
+}
+
+#app .navbar .container-fluid .navbar-nav .nav-link.active {
+  color: #4EA4F3;
+  font-weight: 600;
+}
+
+#app .navbar .container-fluid .navbar-nav .nav-link.downloadApps {
+  color: #fff;
+  background-color: #4EA4F3;
+  border-radius: 10px;
+  padding: .5rem 1.4rem !important;
+  width: fit-content;
+}
+
+#app .navbar .container-fluid .navbar-nav .nav-link.downloadApps.active {
+  color: #fff;
+}
+
+#app .navbar .container-fluid .navbar-nav .nav-link.downloadApps:hover {
+  background: #367aba;
+}
+
+#app .videocontainer {
+  position: relative;
+}
+
+#app .videocontainer .backgroundVideo {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  direction: ltr;
+}
+
+#app .videocontainer .backgroundVideo .videoJumbotron {
+  position: absolute;
+  max-width: none;
+  z-index: 1;
+}
+
+#app .videocontainer .overlayBackground {
+  width: 100%;
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.5;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  z-index: 2;
+}
+
+#app .contentKreasiAsia {
+  position: relative;
+  background-color: #fff;
+  z-index: 2;
+  border-radius: 100px;
+}
+
+#app .contentKreasiAsia .wrapperContent h1 {
+  color: #615C5B;
+  font-weight: 600;
+  text-align: center;
+}
+
+#app .contentKreasiAsia .wrapperContent h1 span {
+  color: #2975BB !important;
+}
+
+#app .contentKreasiAsia .wrapperContent .content {
+  text-align: center;
+}
+
+#app .contentKreasiAsia .wrapperContent .content .imagesContent img {
+  width: 100%;
+  max-width: 300px;
+}
+
+#app .contentKreasiAsia .wrapperContent .content h2 {
+  font-weight: 600;
+}
+
+#app .serviceContainer {
+  background: url(/dist/assets/Images/backgroundService.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#app .serviceContainer .wrapperService {
+  text-align: center;
+}
+
+#app .serviceContainer .wrapperService .service {
+  height: 100%;
+}
+
+#app .serviceContainer .wrapperService .service.managedService {
+  background-color: #4EA4F3;
+}
+
+#app .serviceContainer .wrapperService .service.cyberSecurity {
+  background-color: #4BD959;
+}
+
+#app .serviceContainer .wrapperService .service.profesionalService {
+  background-color: #FF8934;
+}
+
+#app .serviceContainer .wrapperService .service .imagesService {
+  margin-bottom: 1rem;
+}
+
+#app .serviceContainer .wrapperService .service .imagesService img {
+  width: 100%;
+}
+
+#app .serviceContainer .wrapperService .service h2 {
+  color: #fff;
+  font-weight: 700;
+}
+
+#app .serviceContainer .wrapperService .service p {
+  color: #fff;
+}
+
+#app .contentPublisherContainer {
+  background: linear-gradient(203.56deg, #FF8934 21.73%, #E06C18 104.09%);
+  padding: 7rem 0 20rem 0;
+}
+
+#app .contentPublisherContainer .wrapperContentPublisher h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#app .contentPublisherContainer .wrapperContentPublisher p {
+  text-align: center;
+  color: #fff;
+  line-height: 25px;
+}
+
+#app .contentPublisherContainer .wrapperContentPublisher .titleDesc {
+  margin-bottom: 2rem;
+}
+
+#app .contentPublisherContainer .wrapperContentPublisher .contentPublisher {
+  background-color: #fff;
+  border-radius: 0px 0 40px 40px;
+  height: 100%;
+}
+
+#app .contentPublisherContainer .wrapperContentPublisher .contentPublisher .videoSection {
+  margin-bottom: 1rem;
+}
+
+#app .contentPublisherContainer .wrapperContentPublisher .contentPublisher .infoSection {
+  padding: 1.4rem;
+}
+
+#app .contentPublisherContainer .wrapperContentPublisher .contentPublisher .infoSection .judul {
+  color: #000000;
+  text-decoration: none;
+}
+
+#app .contentPublisherContainer .wrapperContentPublisher .contentPublisher .infoSection .viewsVideo {
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 1.2rem 0 1rem 0;
+  margin-top: .5rem;
+}
+
+#app .contentPublisherContainer .wrapperContentPublisher .contentPublisher .infoSection .viewsVideo p {
+  text-align: end;
+  color: #000;
+}
+
+#app .speakerKreasiAsia {
+  padding: 10rem 0;
+  background-color: #fff;
+  position: relative;
+  top: -200px;
+  z-index: 6;
+  border-radius: 0 200px 0 200px;
+}
+
+#app .speakerKreasiAsia .wrapperContent h1 {
+  color: #4394DE;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#app .speakerKreasiAsia .wrapperContent p {
+  color: #4394DE;
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 5rem;
+}
+
+#app .speakerKreasiAsia .wrapperContent .speakerImages img {
+  width: 100%;
+  max-width: 220px;
+}
+
+#app .aboutKreasiAsiaContainer {
+  background: linear-gradient(161.09deg, #4EA4F3 12.76%, #4394DE 121.57%);
+  border-radius: 0px 0px 200px 0px;
+  padding: 25rem 0;
+  position: relative;
+  top: -400px;
+  z-index: 5;
+}
+
+#app .aboutKreasiAsiaContainer .vector {
+  position: absolute;
+  z-index: 2;
+}
+
+#app .aboutKreasiAsiaContainer .vector img {
+  width: 100%;
+}
+
+#app .aboutKreasiAsiaContainer .vector.vector1 {
+  right: 0;
+  top: 10%;
+}
+
+#app .aboutKreasiAsiaContainer .vector.vector2 {
+  left: 0;
+  bottom: 0;
+}
+
+#app .aboutKreasiAsiaContainer .wrapperContent {
+  position: relative;
+  z-index: 5;
+}
+
+#app .aboutKreasiAsiaContainer .wrapperContent .title {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+#app .aboutKreasiAsiaContainer .wrapperContent .title .specialText {
+  position: relative;
+}
+
+#app .aboutKreasiAsiaContainer .wrapperContent .title .specialText::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 15px;
+  width: 110%;
+  background-color: #FF8934;
+}
+
+#app .aboutKreasiAsiaContainer .wrapperContent .video iframe {
+  width: 100%;
+}
+
+#app footer {
+  position: relative;
+  top: -100px;
+}
+
+#app footer .wrapperFooter {
+  width: 100%;
+}
+
+#app footer .wrapperFooter .footerContent {
+  margin: 1rem 0;
+  color: #615C5B;
+}
+
+#app footer .wrapperFooter .footerContent img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: .5rem;
+}
+
+#app footer .wrapperFooter .footerContent h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#app footer .wrapperFooter .footerContent .addres {
+  font-size: 16px;
+  font-weight: 400;
+  color: #615C5B;
+  max-width: 300px;
+}
+
+#app footer .wrapperFooter .footerContent .wrapeperService p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#app footer .wrapperFooter .footerContent .contact {
+  display: flex;
+  align-items: center;
+}
+
+#app footer .wrapperFooter .footerContent .contact ion-icon {
+  font-size: 22px;
+}
+
+#app footer .wrapperFooter .footerContent .contact p {
+  margin-left: .5rem;
+}
+
+#app footer .wrapperFooter .footerContent .socialMedia a {
+  text-decoration: none;
+  color: #615C5B;
+}
+
+#app footer .wrapperFooter .footerContent .socialMedia a ion-icon {
+  font-size: 22px;
+}
+
+@media screen and (min-width: 0px) {
+  #app .navbar .container-fluid .navbar-brand img {
+    max-width: 184px;
+  }
+  #app .videocontainer {
+    height: calc(100vw/1.77);
+  }
+  #app .videocontainer .backgroundVideo {
+    top: 0;
+    left: 0;
+  }
+  #app .videocontainer .backgroundVideo .videoJumbotron {
+    height: calc(100vw/1.77);
+    width: 100%;
+  }
+  #app .videocontainer .overlayBackground {
+    width: 100%;
+    height: calc(100vw/1.77);
+    top: 0;
+    left: 0;
+  }
+  #app .contentKreasiAsia {
+    top: -50px;
+  }
+  #app .contentKreasiAsia .wrapperContent {
+    padding: 8rem 0;
+  }
+  #app .contentKreasiAsia .wrapperContent h1 {
+    margin-bottom: 2.5rem;
+  }
+  #app .contentKreasiAsia .wrapperContent .content {
+    margin: 1rem 0;
+  }
+  #app .contentKreasiAsia .wrapperContent .content .imagesContent {
+    margin-bottom: 1rem;
+  }
+  #app .contentKreasiAsia .wrapperContent .content h2 {
+    margin-bottom: 1rem;
+    font-size: 18px;
+  }
+  #app .contentKreasiAsia .wrapperContent .content p {
+    font-size: 14px;
+  }
+  #app .serviceContainer {
+    padding: 5rem 0;
+  }
+  #app .serviceContainer .wrapperService h1 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  #app .serviceContainer .wrapperService p {
+    color: #fff;
+  }
+  #app .serviceContainer .wrapperService p.paragrafTitle {
+    margin-bottom: 3rem;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  #app .serviceContainer .wrapperService .service {
+    padding: 3rem 2rem;
+    border-radius: 40px;
+  }
+  #app .serviceContainer .wrapperService .service .imagesService img {
+    max-width: 350px;
+  }
+  #app .serviceContainer .wrapperService .service h2 {
+    margin-bottom: 1rem;
+  }
+  #app .serviceContainer .wrapperService .service p {
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #app .navbar .container-fluid .navbar-brand img {
+    max-width: 284px;
+  }
+  #app footer .wrapperFooter .footerContent .addres {
+    font-size: 20px;
+  }
+  #app footer .wrapperFooter .footerContent .wrapeperService p {
+    font-size: 20px;
+  }
+  #app footer .wrapperFooter .footerContent .contact ion-icon {
+    font-size: 22px;
+  }
+  #app footer .wrapperFooter .footerContent .contact p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #app .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link {
+    font-size: 18px;
+    padding: .5rem 1rem;
+  }
+  #app .navbar .container-fluid .navbar-collapse .navbar-nav .nav-link.downloadApps {
+    margin-left: 1rem;
+  }
+  #app .contentKreasiAsia {
+    top: -100px;
+  }
+  #app .contentKreasiAsia .wrapperContent .content {
+    margin: 2rem 0;
+  }
+  #app .contentKreasiAsia .wrapperContent .content .imagesContent {
+    margin-bottom: 1rem;
+  }
+  #app .contentKreasiAsia .wrapperContent .content h2 {
+    margin-bottom: 1rem;
+    font-size: 24px;
+  }
+  #app .contentKreasiAsia .wrapperContent .content p {
+    font-size: 18px;
+    padding: 0 1.5rem;
+  }
+  #app .serviceContainer .wrapperService p.paragrafTitle {
+    font-size: 22px;
+    padding: 0 15rem;
+  }
+  #app .serviceContainer .wrapperService .service {
+    padding: 4rem 2rem;
+  }
+  #app .contentPublisherContainer .wrapperContentPublisher .titleDesc {
+    font-size: 20px;
+    padding: 0 10rem;
+  }
+  #app .speakerKreasiAsia .wrapperContent p {
+    font-size: 20px;
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #app .videocontainer {
+    height: 0;
+    min-height: 80vh;
+    max-height: 80vh;
+  }
+  #app .videocontainer .backgroundVideo {
+    top: 0;
+    left: 0;
+  }
+  #app .videocontainer .backgroundVideo .videoJumbotron {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #app .videocontainer .overlayBackground {
+    height: 80vh;
+  }
+  #app .contentPublisherContainer .wrapperContentPublisher .titleDesc {
+    padding: 0 15rem;
+  }
+  #app .speakerKreasiAsia .wrapperContent p {
+    padding: 0 15rem;
+  }
+}
